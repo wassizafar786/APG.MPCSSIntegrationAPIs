@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+	<TargetFramework>net8.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\APG.MessageQueue.Contracts\APG.MessageQueue.Contracts.csproj" />
+		<ProjectReference Include="..\APGMPCSSIntegration.Common\APGDigitalIntegration.Common.csproj" />
+		<ProjectReference Include="..\APGMPCSSIntegration.Constant\APGDigitalIntegration.Constant.csproj" />
+		<ProjectReference Include="..\APGMPCSSIntegration.DomainHelper\APGDigitalIntegration.DomainHelper.csproj" />
+		<ProjectReference Include="..\APGMPCSSIntegration.Domain\APGDigitalIntegration.Domain.csproj" />
+		<ProjectReference Include="..\APGMPCSSIntegration.IAL.External\APGDigitalIntegration.IAL.External.csproj" />
+		<ProjectReference Include="..\APGMPCSSIntegration.IAL.Internal\APGDigitalIntegration.IAL.Internal.csproj" />
+		<ProjectReference Include="..\APGMPCSSIntegration.MessageQueue\APG.MessageQueue.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="12.0.1" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="Polly" Version="8.2.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Services\dsa.xml" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Remove="Interfaces\IDigitalTransactionAppService2.cs" />
+	  <Compile Remove="Services\DigitalTransactionAppService2.cs" />
+	</ItemGroup>
+</Project>

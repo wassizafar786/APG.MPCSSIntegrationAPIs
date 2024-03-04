@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\APG.MessageQueue.Contracts\APG.MessageQueue.Contracts.csproj" />
+		<ProjectReference Include="..\APGMPCSSIntegration.Domain.Core\APGDigitalIntegration.Domain.Core.csproj" />
+		<ProjectReference Include="..\APGMPCSSIntegration.DomainHelper\APGDigitalIntegration.DomainHelper.csproj" />
+		<ProjectReference Include="..\APGMPCSSIntegration.Infra.CrossCutting.Bus\APGDigitalIntegration.Infra.CrossCutting.Bus.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="FluentValidation" Version="11.8.1" />
+		<PackageReference Include="System.ComponentModel" Version="4.3.0" />
+		<PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+		<PackageReference Include="System.Security.Claims" Version="4.3.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Commands\Validations" />
+	</ItemGroup>
+
+</Project>

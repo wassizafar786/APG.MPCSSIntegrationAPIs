@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\APGDigitalIntegration.BackgroundJobs\APGDigitalIntegration.BackgroundJobs.csproj" />
+		<ProjectReference Include="..\APGDigitalIntegration.Infra.Data\APGDigitalIntegration.Infra.Data.csproj" />
+		<ProjectReference Include="..\APGMPCSSIntegration.Application\APGDigitalIntegration.Application.csproj" />
+		<ProjectReference Include="..\APGMPCSSIntegration.Domain\APGDigitalIntegration.Domain.csproj" />
+		<ProjectReference Include="..\APGMPCSSIntegration.IAL.Internal\APGDigitalIntegration.IAL.Internal.csproj" />
+		<ProjectReference Include="..\APGMPCSSIntegration.MessageQueue\APG.MessageQueue.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="8.0.0" />
+	  <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+	  <PackageReference Include="Microsoft.Extensions.Localization" Version="8.0.0" />
+	</ItemGroup>
+
+</Project>

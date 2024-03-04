@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\APGMPCSSIntegration.Common\APGMPCSSIntegration.Common.csproj" />
+    <ProjectReference Include="..\APGMPCSSIntegration.Constant\APGMPCSSIntegration.Constant.csproj" />
+    <ProjectReference Include="..\APGMPCSSIntegration.IAL.Internal\APGMPCSSIntegration.IAL.Internal.csproj" />
+    <ProjectReference Include="..\APGMPCSSIntegration.MessageQueue\APGMPCSSIntegration.MessageQueue.Send.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Communicators\" />
+  </ItemGroup>
+
+</Project>
